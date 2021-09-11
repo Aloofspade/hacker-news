@@ -1,0 +1,22 @@
+
+@use '../themes/defaultTheme' as *;
+@use '../util' as *;
+
+.btn{
+    display: inline-block;
+    background: $primary-4;
+    color: $white;
+    padding: 1rem, 2rem;
+    border-radius: $radius;
+    border-color: transparent;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: $transition;
+
+    &:hover{
+        background: $primary-0;
+        color: $primary-5;
+    }
+}

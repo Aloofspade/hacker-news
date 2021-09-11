@@ -1,0 +1,25 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+
+.item{
+    background: $grey-8;
+    @include flex-center;
+    justify-content: space-between;
+    max-width: $fixed-width;
+    margin: 2rem auto;
+    border-radius: $radius;
+    padding: 1rem 2rem;
+    .btn{
+    color: $red-dark;
+    background: transparent;
+    }
+    h4{
+        margin-bottom: 0;
+        font-size: 2em;
+    }
+
+
+
+}
