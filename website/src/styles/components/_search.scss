@@ -1,0 +1,123 @@
+$bg_color:#c6bcad;
+$white:#EFE7E1;
+$brown:#A59E89;
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: $bg_color;
+  font-family: 'Benne', serif;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
+}
+.loading{
+  display: grid;
+  place-items: center;
+  margin-top: 10rem;
+  font-size: 3rem;
+}
+.stories{
+  width: 90vw;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px){
+  .stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.story{
+  // border: 1px solid black;
+  box-shadow: 0 5px 15px  rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+}
+.story:nth-child(odd){
+  background: $white;
+}
+.story:nth-child(even){
+  background: $brown;
+}
+.title{
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.info{
+  margin-bottom: 0.5rem;
+}
+.read-link{
+  font-size: 0.85rem;
+  margin-right: 0.75rem;
+  text-transform: capitalize;
+  color: #4B5257;
+}
+.remove-btn{
+  border: none;
+  background: none;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  color: #7C0B0C;
+  font-family: 'Benne', serif;
+  cursor: pointer;
+}
+}
+//search form
+.search-form{
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+  h2{
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+.form-input{
+  width: 100%;
+  border: none;
+  max-width: 600px;
+  border-bottom: 2px solid $brown;
+  background: $white;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+//buttons
+.btn-container{
+  width: 90vw;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  button{
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    text-transform: capitalize;
+    font-size: 0.5rem;
+    cursor: pointer;
+    background: $brown;
+    &:disabled{
+      cursor: not-allowed;
+    
+    }
+}
+  }
